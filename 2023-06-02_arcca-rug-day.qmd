@@ -1,0 +1,165 @@
+---
+title: "An overview of high-performance computing in the Dementia Research Institute"
+#subtitle: 'Inspired by the <a href="https://github.com/beatrizmilz/quarto-rladies-theme" style="color: #fa2d6e">R-Ladies theme</a>'
+author: '<a href="https://gmbernardoharrington.netlify.app/" style="color: #fa2d6e">Gabriel Mateus Bernardo Harrington</a>'
+date: '2023-06-07'
+date-modified: '`r Sys.Date()`'
+date-format: iso
+institute: 'Research Associate | Webber Group'
+format: ukdri-revealjs
+embed-resources: false
+footer: |
+  [Gabriel Mateus Bernardo Harrington](https://gmbernardoharrington.netlify.app/) 
+  - Source code on [GitHub](https://github.com/H-Mateus/quarto-ukdri-theme)
+  - [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(librarian)
+pkg <- c("tidyverse", "gt", "leaflet", "DT")
+shelf(pkg)
+rm(pkg)
+```
+
+```{r}
+#| label: dri-hexcolours
+#| include: false
+dri_hexcolours <- c("dark_blue" = "#00326e", "light_grey" = "#c4d1d9",
+                    "dark_grey" = "#415767", "sky_blue" = "#0ac8ff",
+                    "petrol_blue" = "007faf", "brigth_blue" = "4682ff",
+                    "cobalt" = "325ad7", "violet" = "#461e8c", "fuchsia" = "#fa2d6e",
+                    "ruby" = "#aa0050", "yellow" = "#ffed00")
+```
+
+## UK DRI overview
+
+-   Founded in 2017 with funding from MRC, Alzheimer's Society and Alzheimer's Research UK
+-   7 centres across the UK
+-   Cardiff centre has a focus on genetics/computational biology
+
+::: centered
+![](images/Centre-map-2022.jpg){width="65%" fig-align="center"}
+:::
+
+## Valentina Escott-Price group
+
+### Projects
+
+-   Mostly works on Alzheimer's Disease
+-   Heritability, Polygenic Risk Score, analysis of digital longitudinal data from devices, GWAS, gene-specific PRS analysis, machine learning, blood biomarkers and more
+-   Utilises datasets such as GRACE (95G), GERAD (500G), UK Biobank (12T) and more
+
+### Research outputs
+
+-   57 papers published since 2018
+-   12 papers published in 2022
+-   34 Presentations since 2018
+
+## Vincent Dion group
+
+### Cas9 protein and sgRNA interaction through energy binding
+
+-   Use Molecular Mechanics Poisson-Boltzmann (MM-PBSA)
+-   Can estimate the biomolecular strength between two entities
+-   Divide the calculation in multiple step so it's less computational
+
+![](images/antoine-protein-binding.png){fig-align="center"}
+
+## Vincent Dion group continued
+
+### Repeat Detector: versatile sizing of expanded tandem repeats and identification of interrupted alleles from targeted DNA sequencing
+
+- Published tool: [https://doi.org/10.1093/nargab/lqac089](https://doi.org/10.1093/nargab/lqac089)
+
+![](images/repeat-detector-fig1.png){fig-align="center"}
+
+## {background-color="black" background-image="images/ann-kathrin-slide.png" background-size='contain'}
+
+## My own projects
+
+### Current projects
+
+-   A sex-gratified AD GWAS
+-   Single nuclei seq of the blood brain barrier in AD
+
+### Upcoming projects
+
+-   Building a vascular brain atlas
+    -   Will trial the [Alzheimer's Disease Data Initiative](https://www.alzheimersdata.org/) for both data sharing and compute
+
+![](images/ADDI-logo-201026919.png){fig-align="center" width="85%"}
+
+## Computational Reproducibility
+
+### Tools
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+-   University GitLab instance
+    -   Publish to GitHub when making project public
+    -   Would like to better leverage CI/CD
+-   Nextflow
+    -   Workflow manager
+-   Quarto
+    -   Literate programming approach for documentation and results sharing (compatible with Jupyter notebooks)
+-   Containers
+
+:::
+
+::: {.column width="40%"}
+
+![](images/gitlab-logo-460144148.png){fig-align="center" width="25%"}
+
+![](images/nextflow_logo-768x154-1609663983.png){fig-align="center" width="50%"}
+
+![](images/quarto-1810146794.png){fig-align="center" width="50%"}
+
+:::
+
+::::
+
+<!-- define the final slide  -->
+
+## Thanks for listening {.final-slide background-image="_extensions/H-Mateus/ukdri/title_background.png" style="color: #0ac8ff;"}
+
+Replace `profile.png` with the path to the pictures you'd like to use.
+
+::: columns
+::: {.column width="20%"}
+![[Name Porsition/Role]{style="color:white;"}](profile.png){.profile-item .custom-box width="75%"}
+:::
+
+::: {.column width="20%"}
+![[Name Porsition/Role]{style="color:white;"}](profile.png){.profile-item .custom-box width="75%"}
+:::
+
+::: {.column width="20%"}
+![[Name Porsition/Role]{style="color:white;"}](profile.png){.profile-item .custom-box width="75%"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+[Collaborator institution]{style="color:white;"}<br> Name (Position/Role)<br> Name (Position/Role)<br> Name (Position/Role)<br>
+:::
+
+::: {.column width="50%"}
+[Collaborator institution]{style="color:white;"}<br> Name (Position/Role)<br> Name (Position/Role)<br> Name (Position/Role)<br>
+:::
+:::
+
+<!--Use the following to add further logos to the title/final slide-->
+
+<!--Adjust sizing in the CSS file-->
+
+::: title-logo-1
+:::
+
+::: title-logo-2
+:::
+
+## References
