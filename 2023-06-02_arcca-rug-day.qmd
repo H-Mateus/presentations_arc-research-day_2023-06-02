@@ -10,7 +10,7 @@ format: ukdri-revealjs
 embed-resources: false
 footer: |
   [Gabriel Mateus Bernardo Harrington](https://gmbernardoharrington.netlify.app/) 
-  - Source code on [GitHub](https://github.com/H-Mateus/quarto-ukdri-theme)
+  - Source code on [GitHub](https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide)
   - [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.
 ---
 
@@ -126,40 +126,16 @@ dri_hexcolours <- c("dark_blue" = "#00326e", "light_grey" = "#c4d1d9",
 
 ## Thanks for listening {.final-slide background-image="_extensions/H-Mateus/ukdri/title_background.png" style="color: #0ac8ff;"}
 
-Replace `profile.png` with the path to the pictures you'd like to use.
+- Slides can be found here: [https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide](https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide)
+- Or via the QR code:
 
-::: columns
-::: {.column width="20%"}
-![[Name Porsition/Role]{style="color:white;"}](profile.png){.profile-item .custom-box width="75%"}
+![](images/qrcode.svg){fig-align="center"}
+
+```{r}
+#| include: false
+code <- qrcode::qr_code("https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide")
+qrcode::generate_svg(code, filename = here::here("images/qrcode.svg"))
+```
+
+::: footer
 :::
-
-::: {.column width="20%"}
-![[Name Porsition/Role]{style="color:white;"}](profile.png){.profile-item .custom-box width="75%"}
-:::
-
-::: {.column width="20%"}
-![[Name Porsition/Role]{style="color:white;"}](profile.png){.profile-item .custom-box width="75%"}
-:::
-:::
-
-::: columns
-::: {.column width="50%"}
-[Collaborator institution]{style="color:white;"}<br> Name (Position/Role)<br> Name (Position/Role)<br> Name (Position/Role)<br>
-:::
-
-::: {.column width="50%"}
-[Collaborator institution]{style="color:white;"}<br> Name (Position/Role)<br> Name (Position/Role)<br> Name (Position/Role)<br>
-:::
-:::
-
-<!--Use the following to add further logos to the title/final slide-->
-
-<!--Adjust sizing in the CSS file-->
-
-::: title-logo-1
-:::
-
-::: title-logo-2
-:::
-
-## References
