@@ -132,9 +132,21 @@ dri_hexcolours <- c("dark_blue" = "#00326e", "light_grey" = "#c4d1d9",
 ## Thanks for listening {.final-slide background-image="images/title_background.png" background-size="contain" style="color: #0ac8ff;"}
 
 - Slides can be found here: [https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide](https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide)
-- Or via the QR code:
+- QR code for slides and DOI to cite:
 
-![](images/qrcode.svg){fig-align="center"}
+:::: {.columns}
+::: {.column width="40%"}
+
+![](images/qrcode.svg)
+:::
+::: {.column width="20%"}
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.8013143.svg)](https://doi.org/10.5281/zenodo.8013143)
+
+:::
+::: {.column width="40%"}
+:::
+::::
 
 ```{r}
 #| include: false
