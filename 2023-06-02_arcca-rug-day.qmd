@@ -8,6 +8,10 @@ date-format: iso
 institute: 'Research Associate | Webber Group'
 format: ukdri-revealjs
 logo: images/dri_logo.jpg
+title-slide-attributes:
+   data-background-image: images/title_background.png
+   data-background-size: contain
+   presentation-heading-color: #FFFFFF
 embed-resources: false
 footer: |
   [Gabriel Mateus Bernardo Harrington](https://gmbernardoharrington.netlify.app/) 
