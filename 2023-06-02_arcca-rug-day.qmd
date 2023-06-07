@@ -129,7 +129,7 @@ dri_hexcolours <- c("dark_blue" = "#00326e", "light_grey" = "#c4d1d9",
 
 <!-- define the final slide  -->
 
-## Thanks for listening {.final-slide background-image="images/title_background.png" style="color: #0ac8ff;"}
+## Thanks for listening {.final-slide background-image="images/title_background.png" background-size="contain" style="color: #0ac8ff;"}
 
 - Slides can be found here: [https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide](https://h-mateus.github.io/presentations_arc-research-day_2023-06-02/2023-06-02_arcca-rug-day.html#/title-slide)
 - Or via the QR code:
